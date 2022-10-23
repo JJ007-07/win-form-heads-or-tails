@@ -1,0 +1,13 @@
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\bin\Debug\win-form-heads-or-tails.exe.config
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\bin\Debug\win-form-heads-or-tails.exe
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\bin\Debug\win-form-heads-or-tails.pdb
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.csproj.AssemblyReference.cache
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.csproj.SuggestedBindingRedirects.cache
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form1.resources
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Properties.Resources.resources
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.csproj.GenerateResource.cache
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.csproj.CoreCompileInputs.cache
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.exe
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.pdb
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form3.resources
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form2.resources
