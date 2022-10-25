@@ -8,6 +8,7 @@ namespace win_form_heads_or_tails
 {
     internal static class Program
     {
+        static int cantidadjugadas = 1;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

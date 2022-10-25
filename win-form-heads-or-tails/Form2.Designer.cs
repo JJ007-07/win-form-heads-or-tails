@@ -66,6 +66,7 @@
             this.txtcantidad.TabIndex = 3;
             this.txtcantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtcantidad.TextChanged += new System.EventHandler(this.txtcantidad_TextChanged);
+            this.txtcantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcantidad_KeyPress);
             // 
             // btnapostar
             // 

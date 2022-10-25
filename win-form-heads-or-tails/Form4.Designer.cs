@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.btncancelar = new System.Windows.Forms.Button();
             this.txtresultado = new System.Windows.Forms.Label();
             this.txtfinal = new System.Windows.Forms.TextBox();
@@ -59,12 +60,13 @@
             // txtfinal
             // 
             this.txtfinal.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfinal.Location = new System.Drawing.Point(523, 47);
+            this.txtfinal.Location = new System.Drawing.Point(546, 47);
             this.txtfinal.Name = "txtfinal";
             this.txtfinal.ReadOnly = true;
             this.txtfinal.Size = new System.Drawing.Size(160, 35);
             this.txtfinal.TabIndex = 18;
             this.txtfinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtfinal.TextChanged += new System.EventHandler(this.txtfinal_TextChanged_1);
             // 
             // btnrepetir
             // 
@@ -75,6 +77,7 @@
             this.btnrepetir.TabIndex = 19;
             this.btnrepetir.Text = "Repetir Juego";
             this.btnrepetir.UseVisualStyleBackColor = true;
+            this.btnrepetir.Click += new System.EventHandler(this.btnrepetir_Click_1);
             // 
             // label1
             // 
@@ -87,6 +90,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 180);
             this.label1.TabIndex = 20;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form4
             // 
@@ -98,9 +102,11 @@
             this.Controls.Add(this.txtfinal);
             this.Controls.Add(this.txtresultado);
             this.Controls.Add(this.btncancelar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

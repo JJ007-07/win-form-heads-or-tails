@@ -47,6 +47,7 @@
             this.coinimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.coinimage.TabIndex = 0;
             this.coinimage.TabStop = false;
+            this.coinimage.Click += new System.EventHandler(this.coinimage_Click);
             // 
             // btnarrojarmoneda
             // 
@@ -118,6 +119,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coinimage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,8 +13,9 @@ namespace win_form_heads_or_tails
 {
     public partial class Form3 : Form
     {
-        float valorglobal = 0;
+        static float valorglobal = 0;
         bool eleccion;
+        static int cantidadjugadas = 0;
 
         public Form3()
         {
@@ -33,7 +34,7 @@ namespace win_form_heads_or_tails
             Form1 f1 = new Form1();
             if (resultado == 1)
             {
-                coinimage.ImageLocation = @"C:\Users\juanb\Desktop\1000Cara.jpg";
+                coinimage.ImageLocation = @"C:\Users\SENA\Desktop\1000Cara.jpg";
                 coinimage.SizeMode = PictureBoxSizeMode.StretchImage;
                 if (eleccion == true)
                 {
@@ -47,16 +48,17 @@ namespace win_form_heads_or_tails
                     valorglobal = valorglobal + (valorglobal - int.Parse(txtcantidadmostrar.Text));
                     MessageBox.Show("El total de apuesta que debes es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                Form3.cantidadjugadas ++;
                 this.Hide();
-                //this.txtcantidadmostrar.Text = txtcantidadfinal.Text;
                 Form4 f4 = new Form4("Prueba");
+                MessageBox.Show("La cantidad de veces que jugaste fue: " + cantidadjugadas, "Resultado final", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 f4.txtfinal.Text = valorglobal + String.Empty;
                 f4.Show();
             }
             //The result is tails
             else
             {
-                coinimage.ImageLocation = @"C:\Users\juanb\Desktop\1000Sello.jpg";
+                coinimage.ImageLocation = @"C:\Users\SENA\Desktop\1000Sello.jpg";
                 coinimage.SizeMode = PictureBoxSizeMode.StretchImage;
                 if (eleccion == true)
                 {
@@ -71,8 +73,10 @@ namespace win_form_heads_or_tails
                     MessageBox.Show("El total de apuesta ganado es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 this.Hide();
+                Form3.cantidadjugadas++;
                 //this.txtcantidadmostrar.Text = txtcantidadfinal.Text;
                 Form4 f4 = new Form4("Prueba");
+                MessageBox.Show("La cantidad de veces que jugaste fue: " + cantidadjugadas, "Resultado final", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 f4.txtfinal.Text = valorglobal + String.Empty;
                 f4.Show();
             }
@@ -84,12 +88,23 @@ namespace win_form_heads_or_tails
 
         private void btncancelar_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("La cantidad de veces que jugaste fue: " + cantidadjugadas, "Resultado final", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             Application.Exit();
         }
 
         private void txtcantidadfinal_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void coinimage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -49,5 +49,10 @@ namespace win_form_heads_or_tails
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

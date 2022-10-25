@@ -13,12 +13,12 @@ namespace win_form_heads_or_tails
 {
     public partial class Form4 : Form
     {
-        String valorglobal;
+        static String valorglobal;
 
         public Form4(String valorglobal)
         {
             InitializeComponent();
-            this.valorglobal = valorglobal;
+            Form4.valorglobal = valorglobal;
         }
 
         private void txtcantidadfinal_TextChanged(object sender, EventArgs e)
@@ -46,6 +46,28 @@ namespace win_form_heads_or_tails
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
+        }
+
+        private void btnrepetir_Click_1(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+            txtfinal.Text = valorglobal+valorglobal;
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtfinal_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
