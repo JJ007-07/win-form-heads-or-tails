@@ -11,3 +11,4 @@ C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tai
 C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win-form-heads-or-tails.pdb
 C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form3.resources
 C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form2.resources
+C:\Users\juanb\Desktop\Repositorio\win-form-heads-or-tails\win-form-heads-or-tails\obj\Debug\win_form_heads_or_tails.Form4.resources

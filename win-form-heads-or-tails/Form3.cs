@@ -7,15 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace win_form_heads_or_tails
 {
     public partial class Form3 : Form
     {
+        float valorglobal = 0;
+        bool eleccion;
 
         public Form3()
         {
+        }
+
+        public Form3(bool eleccion)
+        {
             InitializeComponent();
+            this.eleccion = eleccion;
         }
 
         private void btnarrojarmoneda_Click(object sender, EventArgs e)
@@ -23,43 +31,65 @@ namespace win_form_heads_or_tails
             Random arrojarmoneda = new Random();
             int resultado = arrojarmoneda.Next(1, 3);
             Form1 f1 = new Form1();
-            string opcion1 = f1.opcion1.Text;
-            string opcion2 = "";
-            MessageBox.Show(opcion1);
-
-            //The result is heads
             if (resultado == 1)
             {
                 coinimage.ImageLocation = @"C:\Users\juanb\Desktop\1000Cara.jpg";
                 coinimage.SizeMode = PictureBoxSizeMode.StretchImage;
-                if (opcion1 == "1")
+                if (eleccion == true)
                 {
-                   // MessageBox.Show("Ha ganado");
+                    MessageBox.Show("Has ganado!", "Resultado de la Apuesta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    valorglobal = (int.Parse(txtcantidadmostrar.Text) * 2);
+                    MessageBox.Show("El total de apuesta ganado es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    //MessageBox.Show("Ha perdido");
+                    MessageBox.Show("Has perdido!", "Resultado de la Apuesta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    valorglobal = valorglobal + (valorglobal - int.Parse(txtcantidadmostrar.Text));
+                    MessageBox.Show("El total de apuesta que debes es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                this.Hide();
+                //this.txtcantidadmostrar.Text = txtcantidadfinal.Text;
+                Form4 f4 = new Form4("Prueba");
+                f4.txtfinal.Text = valorglobal + String.Empty;
+                f4.Show();
             }
             //The result is tails
             else
             {
                 coinimage.ImageLocation = @"C:\Users\juanb\Desktop\1000Sello.jpg";
                 coinimage.SizeMode = PictureBoxSizeMode.StretchImage;
-                if (opcion2 == "1")
+                if (eleccion == true)
                 {
-                    //MessageBox.Show("Ha ganado");
+                    MessageBox.Show("Has perdido!", "Resultado de la Apuesta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    valorglobal = valorglobal + (valorglobal - int.Parse(txtcantidadmostrar.Text));
+                    MessageBox.Show("El total de apuesta que debes es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else
                 {
-                    //MessageBox.Show("Ha perdido");
+                    MessageBox.Show("Has ganado!", "Resultado de la Apuesta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    valorglobal = (int.Parse(txtcantidadmostrar.Text) * 2);
+                    MessageBox.Show("El total de apuesta ganado es de: " + valorglobal, "Total", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                this.Hide();
+                //this.txtcantidadmostrar.Text = txtcantidadfinal.Text;
+                Form4 f4 = new Form4("Prueba");
+                f4.txtfinal.Text = valorglobal + String.Empty;
+                f4.Show();
             }
         }
 
         private void txtcantidadmostrar_TextChanged(object sender, EventArgs e)
         {
+        }
 
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtcantidadfinal_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

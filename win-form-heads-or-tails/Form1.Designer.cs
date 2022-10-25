@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bienvenida = new System.Windows.Forms.Label();
             this.opción = new System.Windows.Forms.Label();
             this.btncara = new System.Windows.Forms.Button();
@@ -35,8 +36,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.coinimage = new System.Windows.Forms.PictureBox();
             this.btncancelar = new System.Windows.Forms.Button();
-            this.opcion1 = new System.Windows.Forms.TextBox();
-            this.opcion2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coinimage)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +85,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Image = global::win_form_heads_or_tails.Properties.Resources._1000Sello;
             this.pictureBox1.Location = new System.Drawing.Point(444, 259);
             this.pictureBox1.Name = "pictureBox1";
@@ -103,6 +103,7 @@
             this.coinimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.coinimage.TabIndex = 4;
             this.coinimage.TabStop = false;
+            this.coinimage.Click += new System.EventHandler(this.coinimage_Click);
             // 
             // btncancelar
             // 
@@ -115,29 +116,11 @@
             this.btncancelar.UseVisualStyleBackColor = true;
             this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
-            // opcion1
-            // 
-            this.opcion1.Location = new System.Drawing.Point(62, 284);
-            this.opcion1.Name = "opcion1";
-            this.opcion1.Size = new System.Drawing.Size(100, 20);
-            this.opcion1.TabIndex = 7;
-            this.opcion1.TextChanged += new System.EventHandler(this.opcion1_TextChanged);
-            // 
-            // opcion2
-            // 
-            this.opcion2.Location = new System.Drawing.Point(688, 284);
-            this.opcion2.Name = "opcion2";
-            this.opcion2.Size = new System.Drawing.Size(100, 20);
-            this.opcion2.TabIndex = 8;
-            this.opcion2.TextChanged += new System.EventHandler(this.opcion2_TextChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.opcion2);
-            this.Controls.Add(this.opcion1);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.coinimage);
@@ -145,13 +128,13 @@
             this.Controls.Add(this.btncara);
             this.Controls.Add(this.opción);
             this.Controls.Add(this.bienvenida);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opción";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.coinimage)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -164,7 +147,5 @@
         private System.Windows.Forms.PictureBox coinimage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btncancelar;
-        public System.Windows.Forms.TextBox opcion1;
-        public System.Windows.Forms.TextBox opcion2;
     }
 }

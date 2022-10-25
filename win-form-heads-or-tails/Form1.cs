@@ -19,18 +19,15 @@ namespace win_form_heads_or_tails
         }
         private void btncara_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            Form form = new Form2();
+            this.Hide();
+            Form form = new Form2(true);
             form.Show();
-            this.opcion1.Text = "1";
-
         }
         private void btnsello_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            Form form = new Form2();
+            this.Hide();
+            Form form = new Form2(false);
             form.Show();
-            this.opcion2.Text = "1";
         }
 
         private void btncancelar_Click(object sender, EventArgs e)
@@ -44,6 +41,11 @@ namespace win_form_heads_or_tails
         }
 
         private void opcion2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void coinimage_Click(object sender, EventArgs e)
         {
 
         }

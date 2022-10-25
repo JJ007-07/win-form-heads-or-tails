@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.bienvenida = new System.Windows.Forms.Label();
             this.opción = new System.Windows.Forms.Label();
             this.txtcantidad = new System.Windows.Forms.TextBox();
@@ -80,7 +81,7 @@
             // btncancelar
             // 
             this.btncancelar.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancelar.Location = new System.Drawing.Point(334, 396);
+            this.btncancelar.Location = new System.Drawing.Point(12, 396);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(132, 42);
             this.btncancelar.TabIndex = 8;
@@ -99,7 +100,9 @@
             this.Controls.Add(this.txtcantidad);
             this.Controls.Add(this.opción);
             this.Controls.Add(this.bienvenida);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Apuestas";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

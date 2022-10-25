@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.coinimage = new System.Windows.Forms.PictureBox();
             this.btnarrojarmoneda = new System.Windows.Forms.Button();
             this.bienvenida = new System.Windows.Forms.Label();
             this.opción = new System.Windows.Forms.Label();
             this.txtcantidadmostrar = new System.Windows.Forms.TextBox();
+            this.btncancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.coinimage)).BeginInit();
             this.SuspendLayout();
             // 
             // coinimage
             // 
             this.coinimage.Image = global::win_form_heads_or_tails.Properties.Resources._1000Cara;
-            this.coinimage.Location = new System.Drawing.Point(298, 78);
+            this.coinimage.Location = new System.Drawing.Point(549, 72);
             this.coinimage.Name = "coinimage";
             this.coinimage.Size = new System.Drawing.Size(216, 208);
             this.coinimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -49,7 +51,7 @@
             // btnarrojarmoneda
             // 
             this.btnarrojarmoneda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnarrojarmoneda.Location = new System.Drawing.Point(298, 331);
+            this.btnarrojarmoneda.Location = new System.Drawing.Point(549, 325);
             this.btnarrojarmoneda.Name = "btnarrojarmoneda";
             this.btnarrojarmoneda.Size = new System.Drawing.Size(216, 38);
             this.btnarrojarmoneda.TabIndex = 1;
@@ -70,7 +72,7 @@
             // opción
             // 
             this.opción.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.opción.Location = new System.Drawing.Point(12, 89);
+            this.opción.Location = new System.Drawing.Point(12, 134);
             this.opción.Name = "opción";
             this.opción.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.opción.Size = new System.Drawing.Size(245, 40);
@@ -81,7 +83,7 @@
             // txtcantidadmostrar
             // 
             this.txtcantidadmostrar.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcantidadmostrar.Location = new System.Drawing.Point(59, 132);
+            this.txtcantidadmostrar.Location = new System.Drawing.Point(276, 134);
             this.txtcantidadmostrar.Name = "txtcantidadmostrar";
             this.txtcantidadmostrar.ReadOnly = true;
             this.txtcantidadmostrar.Size = new System.Drawing.Size(160, 35);
@@ -89,18 +91,32 @@
             this.txtcantidadmostrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtcantidadmostrar.TextChanged += new System.EventHandler(this.txtcantidadmostrar_TextChanged);
             // 
+            // btncancelar
+            // 
+            this.btncancelar.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancelar.Location = new System.Drawing.Point(12, 396);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(132, 42);
+            this.btncancelar.TabIndex = 9;
+            this.btncancelar.Text = "Salir";
+            this.btncancelar.UseVisualStyleBackColor = true;
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.txtcantidadmostrar);
             this.Controls.Add(this.opción);
             this.Controls.Add(this.bienvenida);
             this.Controls.Add(this.btnarrojarmoneda);
             this.Controls.Add(this.coinimage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.coinimage)).EndInit();
             this.ResumeLayout(false);
@@ -115,6 +131,7 @@
         private System.Windows.Forms.Label bienvenida;
         private System.Windows.Forms.Label opción;
         public System.Windows.Forms.TextBox txtcantidadmostrar;
+        private System.Windows.Forms.Button btncancelar;
     }
 }
 

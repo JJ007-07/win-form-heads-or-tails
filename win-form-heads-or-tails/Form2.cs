@@ -12,9 +12,11 @@ namespace win_form_heads_or_tails
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        bool option;
+        public Form2(bool option)
         {
             InitializeComponent();
+            this.option = option;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -30,10 +32,10 @@ namespace win_form_heads_or_tails
         private void btnapostar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
-            f2.txtcantidad.Text = txtcantidad.Text;
-            f2.Hide();
-            Form3 f3 = new Form3();
+            //Form2 f2 = new Form2();
+            this.txtcantidad.Text = txtcantidad.Text;
+            this.Hide();
+            Form3 f3 = new Form3(option);
             f3.Show();
             f3.txtcantidadmostrar.Text = txtcantidad.Text;
         }
