@@ -4,5 +4,5 @@
 ![image](https://user-images.githubusercontent.com/74888621/197674029-3c6631cf-e66b-4013-8317-70cdc9074657.png)
 ### Using Microsoft's Visual Studio IDE
 ### In order to visualise this project, perform the following steps.
-## Clone the repository with the address https://github.com/JJ007-07/win-form-app.git
+## Clone the repository with the address https://github.com/JJ007-07/win-form-heads-or-tails.git
 ### You wait for the programme to load and you will be able to visualise the functional project correctly.
