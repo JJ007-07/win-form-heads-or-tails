@@ -52,9 +52,9 @@
             this.txtresultado.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtresultado.Location = new System.Drawing.Point(12, 47);
             this.txtresultado.Name = "txtresultado";
-            this.txtresultado.Size = new System.Drawing.Size(323, 40);
+            this.txtresultado.Size = new System.Drawing.Size(451, 40);
             this.txtresultado.TabIndex = 15;
-            this.txtresultado.Text = "Saldo total disponible";
+            this.txtresultado.Text = "Saldo Disponible de la Apuesta";
             this.txtresultado.Click += new System.EventHandler(this.txtresultado_Click);
             // 
             // txtfinal
