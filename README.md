@@ -6,3 +6,5 @@
 ### In order to visualise this project, perform the following steps.
 ## Clone the repository with the address https://github.com/JJ007-07/win-form-heads-or-tails.git
 ### You wait for the programme to load and you will be able to visualise the functional project correctly.
+## You can play by opening the executable of the developed application, in this order of folders and open the .exe and enjoy the game
+## win-form-heads-or-tails\win-form-heads-or-tails\bin\Debug\win-form-heads-or-tail.exe
